@@ -3,9 +3,9 @@
 set -Eeo pipefail
 
 pre_run () {
-  zenml integration install sklearn facets kubernetes
+  zenml integration install sklearn facets kubernetes mlflow
 }
 
 pre_run_forced () {
-  zenml integration install sklearn facets kubernetes -y
+  zenml integration install sklearn facets kubernetes mlflow -y
 }
