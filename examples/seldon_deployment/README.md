@@ -22,7 +22,7 @@ models in production.
 ## 🗺 Overview
 
 The example uses the
-[Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset to
+[MNIST-digits](https://keras.io/api/datasets/mnist/) dataset to
 train a classifier using either [Tensorflow (Keras)](https://www.tensorflow.org/)
 or [scikit-learn](https://scikit-learn.org/stable/). Different
 hyperparameter values (e.g. the number of epochs and learning rate for the Keras
@@ -340,7 +340,7 @@ supported by ZenML: S3, GCS and Azure.
 For this AWS S3 example, we'll use the standard `seldon_s3` secret schema, but
 you can also use `seldon_gs` for GCS and `seldon_az` for Azure. To read more about
 secrets, secret schemas and how they are used in ZenML, please refer to the
-[ZenML documentation](https://docs.zenml.io/features/secrets).
+[ZenML documentation](https://docs.zenml.io/mlops-stacks/secrets-managers).
 
 The next sections cover two cases involving AWS authentication: with and without
 IAM role access.  Please look up the variables relevant to your use-case in the
@@ -610,7 +610,7 @@ rm -rf zenml_examples
 
 # 📜 Learn more
 
-Our docs regarding the seldon deployment integration can be found [here](https://docs.zenml.io/advanced-guide/continuous-training-and-deployment).
+Our docs regarding the seldon deployment integration can be found [here](https://docs.zenml.io/mlops-stacks/model-deployers/seldon).
 
 If you want to learn more about deployment in ZenML in general or about how to build your own deployer steps in ZenML
-check out our [docs](https://docs.zenml.io/extending-zenml/model-deployer).
+check out our [docs](https://docs.zenml.io/mlops-stacks/model-deployers/custom).
